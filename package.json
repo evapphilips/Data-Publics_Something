@@ -1,0 +1,25 @@
+{
+  "name": "something",
+  "version": "1.0.0",
+  "description": "sharing COVID-19 stories",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evapphilips/Data-Publics_Something.git"
+  },
+  "author": "Eva Philips",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "socket.io": "^2.3.0"
+  }
+}
