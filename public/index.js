@@ -135,6 +135,13 @@ document.getElementById('submitAddBtn').addEventListener('click', () => {
         // hide add modal
         document.getElementById('addModal').style.display = "none"
 
+        // reset all the values
+        form.elements["location"].value = "";
+        form.elements["story"].value = "";
+
+        // reload page
+        location.reload();
+
     }else{
         alert("Looks like you left a required field blank.  Make sure to complete the entire form.")
     }
