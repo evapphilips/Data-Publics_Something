@@ -11,6 +11,10 @@ const submissionSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
+    location: {
+        type: String,
+        required: false
+    },
     content: {
         type: String,
         required: true

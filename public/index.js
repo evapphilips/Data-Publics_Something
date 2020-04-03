@@ -115,6 +115,7 @@ document.getElementById('submitAddBtn').addEventListener('click', () => {
         const newEntry = {
             section: form.elements["type"].value,
             date: new Date(),
+            location: form.elements["location"].value,
             content: form.elements["story"].value
         }
         const options ={
@@ -200,7 +201,7 @@ function showContent(el){
 
     heading.append('h6')
         .attr("class", "list_location")
-        .text("New York, NY")
+        .text(el.location)
 
     var content = card.append('div')
         .attr("class", "list_content")
